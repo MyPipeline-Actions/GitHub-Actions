@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Application
-        run: echo "Building application..."
+        #run: echo "Building application..."
+        run: sleep 20
