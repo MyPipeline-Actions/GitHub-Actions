@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 # when to trigger this pipeline
 on: [push]
 jobs: # this is nothing but Pipeline like in jenkins # one workflow have multiple Pipelines
-  hellow:
+  hello:
    runs-on: ubuntu-latest # Runners providing free by github are Ubuntu, Windows, and macOS.
    steps: # kind of stages in jenkins to better understing for me i am writing all these
      - name: step1
