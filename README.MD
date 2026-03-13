@@ -7,6 +7,7 @@ $ echo "99755a4f48d81da8d6a59bad6a3216a49394f41d2c842c39f921a1592d7d0733  action
 $ tar xzf ./actions-runner-osx-x64-2.332.0.tar.gz
 
 -----------------------------------++++++++++---------------------------------
+
 Configure 
 
 #Create the runner and start the configuration experience
@@ -14,12 +15,14 @@ $ ./config.sh --url https://github.com/MyPipeline-Actions --token BUFNPQXGKCTMKQ
 $ ./run.sh
 
 -----------------------------------++++++++++---------------------------------
+
 ## Using your self-hosted runner
 
 #Use this YAML in your workflow file for each job
 runs-on: self-hosted
 
 -----------------------------------++++++++++---------------------------------
+
 #This is a basic workflow to help you get started with Actions
 
 name: CI
@@ -56,7 +59,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
 -----------------------------------++++++++++------------------------------------------
+
 ## Structure
 
 Developer Push Code
@@ -81,6 +86,7 @@ Push to Registry
 Deploy to Kubernetes / OpenShift
 
 -----------------------------------++++++++++---------------------------------
+
 ## Terminology understanding
 
 Concept                 Meaning
