@@ -1,0 +1,15 @@
+name: Parallel Jobs demo-example
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building application"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running tests"
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running security scan"
