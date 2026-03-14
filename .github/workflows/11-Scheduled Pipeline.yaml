@@ -1,0 +1,16 @@
+name: Scheduled Pipeline
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  nightly-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Nightly Build
+        run: echo "Running nightly build"
